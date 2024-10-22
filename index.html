@@ -1,48 +1,97 @@
-<html>
-  <head>
-    <meta name='author' content='Luiz Carneiro'>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Assignment Solution for Module 2</title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment Solution for Module 2</title>
+  <!-- Подключаем Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Добавляем стили для визуального оформления */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #ccc;
+    }
+    .title-container {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .menu {
+      background-color: #f8f8f8;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+    }
+    .menu-title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .text {
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
 
-  <body>
+<!-- Навигационная панель -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Food, LLC</a>
+      <!-- Кнопка для мобильного меню -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
 
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#chicken">Chicken</a></li>
+        <li><a href="#beef">Beef</a></li>
+        <li><a href="#sushi">Sushi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Заголовок страницы -->
+<div class="container">
   <div class="title-container">Our Menu</div>
 
+  <!-- Секции меню с адаптивной сеткой -->
   <div class="row">
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class='menu'>
-        <div class='menu-title' id="chicken">Chicken</div>
-        <p class='text'>Chicken is a versatile protein that is loved around the world. It can be grilled, roasted, or fried, and it pairs well with a variety of flavors, from spicy to sweet. Whether in a classic roast chicken or a zesty chicken salad, this dish is sure to please.</p>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="menu">
+        <div class="menu-title" id="chicken">Chicken</div>
+        <p class="text">Chicken is a versatile protein that is loved around the world. It can be grilled, roasted, or fried, and it pairs well with a variety of flavors, from spicy to sweet. Whether in a classic roast chicken or a zesty chicken salad, this dish is sure to please.</p>
       </div>
     </div>
 
-
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class='menu'>
-        <div class='menu-title' id="beef">
-          Beef
-        </div>
-        <p class='text'>Beef is a hearty and satisfying meat that is perfect for those looking for a rich flavor. Whether you prefer a juicy steak, a tender roast, or a flavorful stew, beef dishes are often a crowd-pleaser. Pair it with seasonal vegetables for a balanced meal.
-        </p>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="menu">
+        <div class="menu-title" id="beef">Beef</div>
+        <p class="text">Beef is a hearty and satisfying meat that is perfect for those looking for a rich flavor. Whether you prefer a juicy steak, a tender roast, or a flavorful stew, beef dishes are often a crowd-pleaser. Pair it with seasonal vegetables for a balanced meal.</p>
       </div>
     </div>
 
-    <div class="col-lg-4 col-md-12 col-sm-12">
-      <div class='menu'>
-        <div class='menu-title' id="sushi">Sushi</div>
-        <p class='text'>Sushi is a traditional Japanese dish that has gained worldwide popularity. Made with vinegared rice and various ingredients such as seafood, vegetables, and sometimes tropical fruits, sushi offers a unique taste experience. Whether you enjoy nigiri, sashimi, or rolls, sushi is a fresh and healthy option.
-        </p>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <div class="menu">
+        <div class="menu-title" id="sushi">Sushi</div>
+        <p class="text">Sushi is a traditional Japanese dish that has gained worldwide popularity. Made with vinegared rice and various ingredients such as seafood, vegetables, and sometimes tropical fruits, sushi offers a unique taste experience. Whether you enjoy nigiri, sashimi, or rolls, sushi is a fresh and healthy option.</p>
       </div>
     </div>
-
-
-
-
   </div>
+</div>
 
+<!-- Подключаем необходимые JavaScript файлы для Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  </body>
-  </html>
+</body>
+</html>
